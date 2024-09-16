@@ -119,9 +119,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Esta función simula la obtención de trabajos realizados
         // En una aplicación real, aquí harías una llamada a una API o base de datos
         return [
-            { title: 'Campaña Publicitaria 1', description: 'Diseño de campaña integral para empresa XYZ', image: 'Image.gpg' },
-            { title: 'Estrategia Digital 1', description: 'Implementación de estrategia de marketing digital para startup 123', image: 'path/to/trabajo3.jpg' },
-            { title: 'Campaña en Redes Sociales 1', description: 'Gestión de campaña viral en redes sociales para marca GHI', image: 'path/to/trabajo5.jpg' },
+            { title: 'Campaña Publicitaria #1', description: 'Diseño de campaña integral para empresa XYZ', image: 'Image.gpg' },
+            { title: 'Estrategia Digital #1', description: 'Implementación de estrategia de marketing digital para startup 123', image: 'path/to/trabajo3.jpg' },
+            { title: 'Campaña en Redes Sociales #1', description: 'Gestión de campaña viral en redes sociales para marca GHI', image: 'path/to/trabajo5.jpg' },
         ];
     }
 
