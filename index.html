@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Desplegable Responsive</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="menu">
+        <div class="menu-header">
+            <h2>Menú</h2>
+            <button class="menu-toggle">&#9776;</button>
+        </div>
+        <ul class="menu-items">
+            <li><a href="#" id="inicio-link"><i class="fas fa-home"></i> Inicio</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle"><i class="fas fa-project-diagram"></i> Servicios</a>
+                <ul class="submenu">
+                    <li><a href="#" class="service-link" data-service="publicidad">Publicidad</a></li>
+                    <li><a href="#" class="service-link" data-service="diseno-grafico">Diseño Gráfico</a></li>
+                    <li><a href="#" class="service-link" data-service="marketing-digital">Marketing Digital</a></li>
+                </ul>
+            </li>
+            <li><a href="#" id="trabajos-link"><i class="fas fa-briefcase"></i> Trabajos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="bienvenida" class="service-section">
+            <h2>Agencia Publicitaria 360°</h2>
+            <img src="Imagenes\Agencia.jpg" alt="Imagen de bienvenida" class="imagen-bienvenida">
+            <p>Gracias por visitar nuestra página. Ofrecemos servicios de alta calidad en publicidad, diseño gráfico y marketing digital.</p>
+        </section>
+
+        <section id="publicidad" class="service-section" style="display: none;">
+            <h2>Productos de Publicidad</h2>
+            <ul class="product-submenu">
+                <li><a href="#" class="product-link" data-product="pendones">Pendones</a></li>
+                <li><a href="#" class="product-link" data-product="tarjetas">Tarjetas</a></li>
+                <li><a href="#" class="product-link" data-product="volantes">Volantes</a></li>
+                <li><a href="#" class="product-link" data-product="stickers">Stickers</a></li>
+                <li><a href="#" class="product-link" data-product="impresion-digital">Impresión Digital</a></li>
+            </ul>
+            <div class="products-container"></div>
+        </section>
+
+        <section id="diseno-grafico" class="service-section" style="display: none;">
+            <h2>Productos de Diseño Gráfico</h2>
+            <div class="products-container"></div>
+        </section>
+
+        <section id="marketing-digital" class="service-section" style="display: none;">
+            <h2>Productos de Marketing Digital</h2>
+            <div class="products-container"></div>
+        </section>
+
+        <section id="trabajos" class="service-section" style="display: none;">
+            <h2>Nuestros Trabajos</h2>
+            <div class="trabajos-container"></div>
+        </section>
+
+        <!-- Nuevo modal para imágenes de productos -->
+        <div id="imagenModal" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <img id="imagenProducto" src="" alt="Imagen del producto">
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.facebook.com/publicidad360caicedonia?locale=es_LA" target="_blank" rel="noopener noreferrer">
+                    <div class="icon-container">
+                        <img src="Iconos/facebook.png" alt="Facebook" class="custom-icon">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/agencia_publicitaria_360/" target="_blank" rel="noopener noreferrer">
+                    <div class="icon-container">
+                        <img src="Iconos/social.png" alt="Instagram" class="custom-icon">
+                    </div>
+                </a>
+                <a href="https://www.tiktok.com/@agenciapublicitaria360?lang=es" target="_blank" rel="noopener noreferrer">
+                    <div class="icon-container">
+                        <img src="Iconos/tik-tok.png" alt="TikTok" class="custom-icon">
+                    </div>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2024 Agencia Publicitaria 360°. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
